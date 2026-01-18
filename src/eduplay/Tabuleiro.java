@@ -1,0 +1,18 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package eduplay;
+
+/**
+ *
+ * @author jose_
+ */
+public class Tabuleiro{
+    private Casa[] tabuleiro;
+    private int tam;
+    
+    public Tabuleiro(int tam) {
+        this.tam = tam;
+    }
+}
