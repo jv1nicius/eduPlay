@@ -4,6 +4,9 @@
  */
 package eduplay;
 
+import eduplay.models.Professor;
+import eduplay.ui.Console;
+
 /**
  *
  * @author jose_

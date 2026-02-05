@@ -4,6 +4,10 @@
  */
 package eduplay;
 
+import eduplay.tabuleiro.Tabuleiro;
+import eduplay.models.Professor;
+import eduplay.models.Aluno;
+
 /**
  *
  * @author jose_
