@@ -2,18 +2,20 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Interface.java to edit this template
  */
-package eduplay.tabuleiro;
-
-import eduplay.ui.UI;
-import eduplay.jogador.Jogador;
+package eduplay.jogo;
 
 /**
  *
  * @author jose_
  */
-public interface Casa {
 
-    String entrar(Jogador jogador, UI ui);
+public interface JogoState {
 
-    String getDescricao();
+    void iniciar(Jogo jogo);
+
+    void jogarTurno(Jogo jogo);
+
+    void desfazer(Jogo jogo);
+
+    void finalizar(Jogo jogo);
 }

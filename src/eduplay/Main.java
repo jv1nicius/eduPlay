@@ -4,8 +4,10 @@
  */
 package eduplay;
 
-import eduplay.models.Professor;
-import eduplay.ui.Console;
+import eduplay.ui.UI;
+import eduplay.ui.UIConsole;
+import eduplay.jogo.Jogo;
+import java.util.Scanner;
 
 /**
  *
@@ -17,14 +19,12 @@ public class Main {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Console ui = new Console();
-        Jogo jogo = new Jogo();
-        ui.run();
-        Professor professor = new Professor("Barros");
-        int tamanho = ui.tamanhoTabuleiro();
-        jogo.inicializar(professor, tamanho);
-        ui.imprimirTabuleiro(jogo.getTabuleiro());
-        professor.adicionarDesafio();
-    }
 
+        Scanner scan = new Scanner(System.in);
+        UI ui = new UIConsole(scan);
+
+        Jogo jogo = new Jogo(ui);
+
+        jogo.executar();
+    }
 }
